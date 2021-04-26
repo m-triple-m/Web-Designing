@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        #target{
+            color: brown;
+        }
+
+        .my-card h1{
+            font-size: 100px;
+        }
+
+        h1{
+            transition-duration: 500ms;
+        }
+
+        h1:hover{
+            color: chartreuse;
+            transform: translate(-50px, 50px);
+        }
+
+        .my-image{
+            transition-duration: 300ms;
+            width: 400px;
+            margin: 100px;
+            transform: rotate(30deg);
+            box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, 0.247);
+        }
+
+        .my-image:hover{
+            transform: scale(1.1);
+            box-shadow: none;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1 id="target">Let's Do Some Animation</h1>
+
+    <div class="my-card">
+        <h1>Another Heading inside div</h1>
+    </div>
+
+    <img class="my-image" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3b/SpongeBob_SquarePants_character.svg/1200px-SpongeBob_SquarePants_character.svg.png" alt="">
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        .e2{
+            padding: 50px 200px;
+            margin: 100px;
+            border-radius: 10px;
+            background-color: cornflowerblue;
+            border: 2px solid rgb(19, 56, 126);
+            font-size: 100px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            }
+
+            .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            }
+    </style>
+
+</head>
+<body>
+    
+    <button id="my-btn">My Button</button>
+
+    <h1 class="e1">This is a sample Heading</h1>
+    <h2>Another Sample Heading</h2>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="https://i.gadgets360cdn.com/large/crash_bandicoot_on_the_run_1603788310378.jpg" alt="">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="https://i.gadgets360cdn.com/large/crash_bandicoot_on_the_run_1603788310378.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://i.gadgets360cdn.com/large/crash_bandicoot_on_the_run_1603788310378.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://i.gadgets360cdn.com/large/crash_bandicoot_on_the_run_1603788310378.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="https://i.gadgets360cdn.com/large/crash_bandicoot_on_the_run_1603788310378.jpg" alt="">
+        </div>
+        </div>
+      </div>
+
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+    <p class="e2">Sample Text</p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+        var swiper = new Swiper('.swiper-container');
+
+        // alert(" JavaScript is Awesome!! ");
+        let a = 10;
+        var name = 'Mubassir';
+        const isloggedin = false;
+        n = null;
+        console.log(a);
+
+        let btn = document.getElementById('my-btn');
+        btn.onclick = () => {
+            Swal.fire({
+                icon : 'error',
+                title : 'Awesome!',
+                text : 'Javascript is awesome'
+            })
+        }
+
+        ScrollReveal().reveal('#my-btn');
+        ScrollReveal().reveal('.e1', { distance : '10px', origin : 'right' })
+        ScrollReveal().reveal('.e2', { distance : '50px', 
+                                        origin : 'right', 
+                                        reset: true, 
+                                        delay: 100,
+                                        duration: 500,
+                                        scale: 0.80,
+                                        rotate: {
+                                            z : 10
+                                        } });
+
+    </script>
+
+</body>
+</html>
