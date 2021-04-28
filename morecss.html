@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Pacifico">
+    <style>
+        .card-heading{
+            font-family: Pacifico;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #heading{
+            color: blue;
+        }
+
+        .my-card{
+            border: 2px solid rgb(255, 255, 255);
+            width: 20%;
+            padding: 30px;
+            margin: 200px auto;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.164);
+            box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.178);
+
+        }
+
+        label, input{
+            display: block;
+        }
+
+        label{
+            font-family: Pacifico;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        input{
+            font-family: Pacifico;
+            width: 95%;
+            height: 2.5em;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            padding: 5px 10px ;
+        }
+
+        button{
+            font-family: Pacifico;
+            margin-top: 30px;
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            background-color: rgb(32, 20, 2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.178);
+        }
+
+        body{
+            /* background-image: url(back_image.jpg); */
+            background: url(back_image.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h2 id="heading">Some Other h2 tag</h2>
+
+    <div class="my-card">
+        <h2 class="card-heading" >Login Here</h2>
+
+        <label>Email</label>
+        <input type="text" placeholder="example@mail.com">
+
+        <label>Password</label>
+        <input type="password" placeholder="**********">
+
+        <button class="my-btn">Submit</button>
+    </div>
+
+</body>
+</html>
