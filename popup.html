@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button{
+            font-family: Pacifico;
+            margin-top: 30px;
+            width: 100%;
+            padding: 10px;
+            font-size: 15px;
+            background-color: rgb(32, 20, 2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.178);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button id="my-btn">Click Me</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script>
+        let btn = document.getElementById('my-btn');
+
+        btn.onclick = function(){
+            // alert("button was clicked");
+            Swal.fire({
+                icon : 'error',
+                title : 'Ooops!!',
+                text : 'JS is awesome'
+            })
+        }
+    </script>
+</body>
+</html>
